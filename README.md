@@ -1,1 +1,1 @@
-# easy-bilet
+# tryt
