@@ -1,0 +1,25 @@
+#header {
+  height: 80px;
+  background-color: $red;
+  color: $white;
+  box-sizing: border-box;
+  padding: 22px 0;
+  ul.bread-crumb {
+    font-size: 1.125em;
+    li {
+      padding: 0 10px;
+      &:not(:last-child)::after {
+        content: "";
+        height: 200px;
+        width: 1px;
+        margin-left: 20px;
+        border-right: 1px solid $white;
+      }
+    }
+  }
+}
+@include media-breakpoint-down(lg){
+    #header {
+    background-color: green;
+    }
+}

@@ -1,16 +1,17 @@
 import logo from './logo.svg';
-import './App.css';
+// import './App.scss';
+import Header from './components/Header';
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-       header
-      </header>
+    
+      
+    
       hello easy bilet
-      <footer>
-        footer
-      </footer>
+      <Link to={`uye`}>Your Name</Link>
+     
     </div>
   );
 }

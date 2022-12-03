@@ -1,13 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.scss";
+import reportWebVitals from "./reportWebVitals";
+import "./bootstrap/dist/css/bootstrap.min.css";
+import "./bootstrap/dist/js/bootstrap.bundle.min";
+import { RouterProvider } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import router from "./routes/routes";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Header />
+    <React.Fragment className="container">
+      <RouterProvider router={router} />
+    </React.Fragment>
+    <Footer />
   </React.StrictMode>
 );
 
