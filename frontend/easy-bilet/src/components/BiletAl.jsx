@@ -8,6 +8,7 @@ import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { MobileDatePicker } from "@mui/x-date-pickers/MobileDatePicker";
 import { DesktopDatePicker } from "@mui/x-date-pickers/DesktopDatePicker";
 import { StyledEngineProvider } from "@mui/material";
+import { Link } from "react-router-dom";
 function BiletAl() {
   const [value, setValue] = React.useState(dayjs("2022-04-07"));
   return (
@@ -71,7 +72,7 @@ function BiletAl() {
         </div>
         <div className="row"></div>
        <div className="px-lg-0 p-3 col-lg-3 mt-3">
-       <button class="btn btn-primary w-100 p-lg p-2">Bilet Bul</button>
+       <Link to='sefersec' class="btn btn-primary w-100 p-lg p-2">Bilet Bul</Link>
        </div>
       </form>
     </div>

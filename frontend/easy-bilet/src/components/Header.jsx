@@ -1,6 +1,5 @@
 import React from "react";
-import { BrowserRouter, Link, NavLink, Route, Routes } from "react-router-dom";
-import Login from "./Login";
+import {  NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -21,7 +20,7 @@ function Header() {
       <nav className="color-dark head-2">
         <ul className="container list-unstyled ">
           <li>
-            <NavLink to={"bilet-al"}>
+            <NavLink to={"biletal"} className="d-inline-block">
               <h4>
               Otobüs
               </h4>
