@@ -4,19 +4,19 @@ import "./index.scss";
 import reportWebVitals from "./reportWebVitals";
 import "./bootstrap/dist/css/bootstrap.min.css";
 import "./bootstrap/dist/js/bootstrap.bundle.min";
-import { RouterProvider } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import router from "./routes/routes";
+import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Header />
-    <React.Fragment className="container">
-      <RouterProvider router={router} />
-    </React.Fragment>
-    <Footer />
+    <BrowserRouter>
+      <Header />
+      <App />
+      <Footer />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
