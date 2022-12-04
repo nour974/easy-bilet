@@ -6,9 +6,9 @@ function Header() {
   return (
     <header id="header">
       <div className=" head-1">
-       <div className="d-flex justify-content-between h-100 container">
+       <div className="d-flex justify-content-sm-between justify-content-center h-100 container flex-wrap">
         <h3>EasyBilet.com</h3>
-        <ul className="d-flex h-100 list-unstyled bread-crumb">
+        <ul className="d-flex h-100 list-unstyled bread-crumb align-items-center">
           <li>
             <NavLink to={"login"}>Üye Giriş</NavLink>
           </li>
