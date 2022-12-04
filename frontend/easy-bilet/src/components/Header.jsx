@@ -21,7 +21,11 @@ function Header() {
       <nav className="color-dark head-2">
         <ul className="container list-unstyled ">
           <li>
-            <Link to={"bilet-al"}>Otobüs</Link>
+            <NavLink to={"bilet-al"}>
+              <h4>
+              Otobüs
+              </h4>
+            </NavLink>
           </li>
           {/* <li>Uçak</li> */}
         </ul>

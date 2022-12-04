@@ -1,15 +1,20 @@
 #header {
  
- 
+
   color: $white;
   box-sizing: border-box;
+  a{
+    color: $white;
+  }
  .head-1{
  
   background-color: $red;
  }
  .head-2{
   background-color: #F6F7F8;
-
+  a{
+    color: $danger;
+  }
  }
   .head-1,.head-2{
     padding: 22px 0;
@@ -31,11 +36,11 @@
   }
   ul.second-header{
     background-color: #F6F7F8;
-  
+
   }
 }
 @include media-breakpoint-down(lg){
     #header {
-    background-color: green;
+    
     }
 }

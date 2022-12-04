@@ -9,7 +9,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import App from "./App";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+ let rootE = document.getElementById("root") ;
+const root = ReactDOM.createRoot(rootE);
 root.render(
   <React.StrictMode>
     <BrowserRouter>
